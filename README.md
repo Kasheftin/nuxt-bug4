@@ -10,6 +10,7 @@ I'll show two bugs (alhough they may have one source).
 
 I suppose the reason is this component we use as a wrapper:
 
+```
 <template>
   <div class="container">
     <div class="col -menu">
@@ -20,14 +21,17 @@ I suppose the reason is this component we use as a wrapper:
     </div>
   </div>
 </template>
+```
 
 If the user goes to the index page, we show him menu column only through the index page that looks like:
 
+```
 <template>
   <TwoColumns>
-    Here's the menu
+    MENU GOES HERE
   </TwoColumns>
 </template>
+```
 
 Then he follows the nested route and the target page placed into the nuxt-child of the wrapper.
 
